@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTION Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        EXTION QUIZ
+    </nav>
+
+    <div id="pie-container">
+        <div class="mark-container">
+            <h3 id="candidateName"></h3>
+            <p>You have scored <span id="total-marks"></span> marks</p>
+            <p>Correct Answers : <span id="correct-ans"></span></p>
+            <p>Wrong Answers : <span id="wrong-ans"></span></p>
+            <p>Unattended : <span id="unattended"></span></p>
+        </div>
+        <canvas height="200" id="pieChart"></canvas>
+    </div>
+    <div id="qn-ans-container"></div>
+</body>
+</html>
+<script src="script.js"></script>

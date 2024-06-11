@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTION Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        EXTION QUIZ
+    </nav>
+    <div class="question-super-container">
+        <div id="timer">
+            <h3><span id="timer-min"></span> : <span id="timer-sec"></span></h3>
+        </div>
+        <div id="qn-no-container">
+            <h4>Question <span id="qn-no"></span></h4>
+        </div>
+        <div id="qn-ans-container">
+            <h5 id="qn"></h5>
+            <div id="ans-super-container">
+                <div class="ans-container">
+                    <input type="radio" name="answer" name="ans" id="ans-1"><span id="ans1"></span>
+                </div>
+                <div class="ans-container">
+                    <input type="radio" name="answer" name="ans" id="ans-2"><span id="ans2"></span>
+                </div>
+                <div class="ans-container">
+                    <input type="radio" name="answer" name="ans" id="ans-3"><span id="ans3"></span>
+                </div>
+                <div class="ans-container">
+                    <input type="radio" name="answer" name="ans" id="ans-4"><span id="ans4"></span>
+                </div>
+            </div>
+        </div>
+        <div id="next-prev-buttons">
+            <button id="prev" class="btns">Previous</button>
+            <button id="next" class="btns">Next</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

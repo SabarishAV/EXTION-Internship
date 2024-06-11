@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+}
+
+/* Navbar */
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    position: fixed;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav ul a li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+nav ul a :hover{
+    color: cadetblue;
+}
+
+
+/* home page */
+
+#home{
+    background: url("./images/person.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.title1{
+    font-size: 5rem;
+}
+.title2{
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+
+/* about me */
+
+#aboutMe{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.heading-container h2{
+    font-size: 4rem;
+}
+.heading-container h2 span{
+    font-weight: 700;
+}
+#aboutMe .container{
+    display: flex;
+}
+#aboutMe .left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutMe .left img{
+    width: 70%;
+    margin: 3rem 0;
+}
+#aboutMe .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+    flex-direction: column;
+}
+#aboutMe .right p{
+    font-size: 1.2rem;
+    width: 70%;
+}
+#aboutMe .right .buttons button{
+    font-size: 1.4rem;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.5rem;
+    background-color: white;
+    margin-left: 1rem;
+}
+#aboutMe .right .buttons {
+    padding-top: 3rem;
+}
+button:hover{
+    cursor: pointer;
+}
+
+/* projects */
+
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.card-container-row{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-container-row .card{
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    width: 80%;
+    padding-top: 3rem;
+}
+.card  h3{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-weight: 900;
+}
+.card p{
+    width: 80%;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+.project-links{
+    padding-bottom: 1rem;
+}
+.project-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2rem;
+}
+
+/* services */
+
+#services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+.service-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+}
+.service-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding-block: 1rem;
+    border: 3px solid black;
+    border-radius: .5rem;
+}
+.service-card i{
+    font-size: 5rem;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.service-card h3{
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.service-card p{
+    text-align: center;
+}
+
+
+/* footer */
+footer{
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .container .social-icons{
+    display: flex;
+}
+footer .container ul li{
+    list-style: none;
+    padding-inline: .5rem;
+    font-size: 1.5rem;
+}
+footer .container ul li i{
+    color: white;
+}
+footer .container p{
+    padding-top: .3rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* Hide the menu by default */
+    /* *{
+        overflow-x: hidden !important;
+    } */
+#navbar{
+    display: none;
+}
+#home{
+    background-position: center;
+    overflow-x: hidden;
+}
+#aboutMe .container{
+    flex-direction: column;
+}
+#aboutMe .container .left, #aboutMe .container .right{
+    width: 100%;
+}
+#aboutMe .container .right{
+    padding-top: 0;
+}
+#aboutMe .right .buttons button {
+    margin-top: 1rem;
+}
+#projects .card-container .card-container-row{
+    flex-direction: column;
+}
+#projects .card-container .card{
+    width: 100%;
+    margin-top: 1rem;
+}
+.service-card-container{
+    flex-direction: column;
+}
+.service-card{
+    width: 90%;
+    margin-top: 1rem;
+}
+footer{
+    width: 100vw;
+}
+}

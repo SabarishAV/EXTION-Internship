@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTION E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#product-heading">Products</a></li>
+        </ul>
+        <i class="fa-solid fa-cart-shopping cart-btn" onclick="goToCart()"></i>
+    </nav>
+
+    <div id="product-info">
+        <div id="left">
+            <img id="product-image" src="" alt="">
+            <div class="btns">
+                <button id="addToCartBtn">Add to Cart</button>
+                <button id="buyNowBtn">Buy Now</button>
+            </div>
+        </div>
+        <div id="right">
+            <div id="name-container">
+                <h3 id="name"></h3>
+            </div>
+            <div id="price-container">
+                <h4 id="price"></h4>
+                <h5>
+                    <span id="mrp-container">MRP: <span id="mrp"></span></span>
+                    <span id="discount-container"><span id="discount"></span>%off</span>
+                </h5>
+                <p>Inclusive of all taxes</p>
+            </div>
+            <div>
+                <h3 id="about">About this item</h3>
+                <div id="description-container"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="AddToCart">
+        <h4>Item added to cart successfully!!</h4>
+        <button onclick="goToCart()">Go To Cart</button>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTION Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        EXTION QUIZ
+    </nav>
+    <div id="start-container">
+        <div class="welcome">
+            <h2>Hello,<span>Welcome to EXTION Quiz</span></h2>
+        </div>
+        <div id="person-super-container">
+            <div id="person-container">
+                <div id="person-image-container">
+                    <img src="./assets/start-page/person.svg" alt="">
+                </div>
+                <form id="person-details-container">
+                    <div id="person-name" class="person">
+                        <label for="name-input">Name</label>
+                        <input id="name-input" type="text" placeholder="John Doe" required>
+                    </div>
+                    <div id="person-gender" class="person">
+                        <label>Gender</label>
+                        <input type="radio" name="gender" alt="Male">Male</input>
+                        <input type="radio" name="gender" alt="Female">Female</input>
+                    </div>
+                    <div id="field-mandatory">
+                        <p>All the fields are mandatory!!</p>
+                    </div>
+                </form>
+                <div id="start-btn-container">
+                    <button id="start-btn" onclick="startTest()" type="submit">Start Test</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>
